@@ -26,6 +26,7 @@ import org.testng.annotations.AfterSuite;
 		@AfterSuite
 		public void afterSuite() {
 			System.out.println("After suite is executed");
+			System.out.println("After suite is executed");
 		}
 		@AfterSuite
 		public void afterSuite1() {
