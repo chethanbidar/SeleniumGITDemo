@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<test thread-count="5" name="Practice1">
+<groups>
+	<run>
+	<include name="cartproducts"/>
+	</run>
+</groups>
+</test> <!-- Test -->
+	<test thread-count="5" name="Practice">
+		<classes>
+			<class name="com.POM.Practice.test.LoginTest" />
+			<class name="com.POM.Practice.test.HomePageTest" />
+			<class name="com.POM.Practice.test.CartPageTest" />
+			<class name="com.POM.Practice.test.PaymentPageTest" />
+			<class name="com.POM.Practice.test.OrderConfirmTest" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite01]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="Assertion_Demo.RetryListners"/>
+  </listeners>
+  <test thread-count="5" name="ListnersTest(failed)">
+    <classes>
+      <class name="com.POM.Practice.CartPageTest">
+        <methods>
+          <include name="car_Page_Test"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.POM.Practice.CartPageTest -->
+      <class name="com.POM.Practice.LoginTest">
+        <methods>
+          <include name="login_Test"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.POM.Practice.LoginTest -->
+      <class name="com.POM.Practice.OrderConfirmTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="Order_Confirmation_Test"/>
+        </methods>
+      </class> <!-- com.POM.Practice.OrderConfirmTest -->
+      <class name="com.POM.Practice.PaymentPageTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="afterTest"/>
+          <include name="payment_Page_Teat"/>
+        </methods>
+      </class> <!-- com.POM.Practice.PaymentPageTest -->
+      <class name="com.POM.Practice.HomePageTest">
+        <methods>
+          <include name="afterTest"/>
+          <include name="home_Page_Test"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.POM.Practice.HomePageTest -->
+    </classes>
+  </test> <!-- ListnersTest(failed) -->
+</suite> <!-- Failed suite [Suite01] -->
